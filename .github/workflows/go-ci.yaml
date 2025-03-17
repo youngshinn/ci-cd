@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-22.04
     defaults:
       run:
-        working-directory: /go-example/go-example
+        working-directory: go-example
     steps:
       - uses: actions/checkout@v3
 
@@ -49,7 +49,7 @@ jobs:
           go build cmd/main.go
 
       - name: Upload binary
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: main
           path: go-example/main
