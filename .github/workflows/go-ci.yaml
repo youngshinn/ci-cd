@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-22.04
     defaults:
       run:
-        working-directory: go-example
+        working-directory: /go-example/go-example
     steps:
       - uses: actions/checkout@v3
 
